@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+aside.nav {
+    position:fixed;
+    top: 0;
+    left: 0;
+    height:100vh;
+    width: 80px;
+    background-color: #b8b1b1;
+}
+
+section {
+    padding: 70px 0;
+    padding-left: 80px;
+}
+
+section:first-of-type {
+  padding-top: 0;
+}
+
+section h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 46px;
+  font-weight: bold;
+  font-size: 48px;
+  color: #686868;
+}
+
+section.shop > h2,
+section.best-sellers > h2 {
+  margin-bottom: 60px;
+}
+
+section.shop .container,
+section.best-sellers .container {
+  margin: -15px;
+}
+
+section.shop .container .card,
+section.best-sellers .container .card {
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+}
+
+section.shop .container .card > img,
+section.best-sellers .container .card > img {
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+
+section.shop .container .card .card-title,
+section.best-sellers .container .card .card-title {
+  color: #888888;
+  font: normal normal bold 28px/27px Segoe UI;
+}
+
+section.shop .container .card .card-subtitle,
+section.best-sellers .container .card .card-subtitle {
+  color: #888888;
+  font: italic normal normal 22px/27px Segoe UI;
+}
+
+section.shop .container .card .card-text,
+section.best-sellers .container .card .card-text {
+  color: #C5C3C3;
+}
+
+section.shop .container .card-text.price-tag{
+  font: normal normal bold 52px/69px Segoe UI;
+  color: #1A1A1A;
+}
+
+
+section.shop .container .card .card-body,
+section.best-sellers .container .card .card-body {
+  padding: 0;
+}
+
+section.shop .container > *,
+section.best-sellers .container > * {
+  margin: 15px
+}
+
+section .header .btn,
+section.shop .container .btn-secondary,
+section.best-sellers .container .btn-secondary {
+  width: 100%;
+  border-radius: 0;
+}
+
+section.shop .btn-secondary {
+  font: normal normal bold 41px/54px Segoe UI;
+  text-transform: Uppercase;
+}
+
+section .header {
+  height: 100vh;
+
+   background: url("https://via.placeholder.com/1920x1080") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+section .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .header .logo {
+  margin: 14px;
+  width: 296px;
+  height: 88px;
+}
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 712px;
+  height: 423px;
+  margin-right: 125px;
+  background: url("https://via.placeholder.com/712x423");
+  counter-increment: gallery-cell;
+}
+
+.masonry {
+  margin: -7px;
+  margin: 0 auto;
+}
+
+.masonry .masonry-item {
+  padding: 7px;
+}
+
+.carrossel h1 {
+  text-align: center;
+  margin-bottom:30px;
+}
+
+
+.lojinha .container .row .col-md-3 {
+  background-color:red;
+  border: 1px solid black;
+}
+
+section .header .btn {
+  width: 370px;
+  margin: 30px;
+}
