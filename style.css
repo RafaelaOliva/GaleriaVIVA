@@ -160,4 +160,5 @@ section .header .logo {
 section .header .btn {
   width: 370px;
   margin: 30px;
+  background-color:red;
 }
