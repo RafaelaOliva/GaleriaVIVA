@@ -28,7 +28,6 @@ section h2 {
   margin-bottom: 46px;
   font-weight: bold;
   font-size: 48px;
-  color: #686868;
   font-family: "Messapia";
 }
 
@@ -142,25 +141,15 @@ section .header .btn-secondary {
 }
 
 .gallery-cell {
-  width: 712px;
-  height: 423px;
-  margin-right: 125px;
-  background: url("https://via.placeholder.com/712x423");
+  width: 700px;
   counter-increment: gallery-cell;
+  padding: 10px;
 }
 
-.masonry {
-  margin: -7px;
-  margin: 0 auto;
-}
-
-.masonry .masonry-item {
-  padding: 7px;
-}
-
-.carrossel h1 {
+.carrossel h2 {
   text-align: center;
   margin-bottom:30px;
+  color: #E72480;
 }
 
 
@@ -172,4 +161,142 @@ section .header .btn-secondary {
 section .header .btn {
   width: 370px;
   margin: 30px;
+}
+
+// Within style tags in your html file
+* { box-sizing: border-box; }
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+@media (max-width: 575px) {
+  .grid-sizer,
+  .grid-item {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .grid-sizer,
+  .grid-item {
+    width: 50%;
+  }
+
+}
+
+@media (min-width: 300px) and (max-width:576px) {
+  div.card-img {
+    width:100% !important;
+    margin-top: 20px;
+  }
+}
+
+/* To change the amount of columns on larger devices, uncomment the code below */
+
+/* @media (min-width: 768px) and (max-width: 991px) {
+  .grid-sizer,
+  .grid-item {
+    width: 33.333%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .grid-sizer,
+  .grid-item {
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-sizer,
+  .grid-item {
+    width: 20%;
+  }
+} */
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.destaque h2 {
+  color:#DDC30A;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+
+}
+
+.grid-item:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+span.title {
+  background-color:red; 
+  padding: 5px 20px 5px 20px; 
+  font-family:Messapia;
+  color:#DDC30A;
+}
+
+button#vejamais {
+  margin:auto;
+  display:block;
+  font-weight:bold;
+  padding: 5px 30px 5px 30px;
+  background-color:#7BB928;
+  border-radius:0;
+  border-color:#7BB928;
+}
+
+div.card-img {
+  width:340px;
+  height:250px;
+
+  margin-bottom: 20px;
+}
+
+.card-img#card-1 {
+  background:url("assets/img/NoPath\ -\ Copia\ \(13\).png");
+}
+
+.card-img#card-2 {
+  background:url("assets/img/NoPath\ -\ Copia\ \(14\).png");
+}
+
+.card-img#card-3 {
+  background:url("assets/img/NoPath\ -\ Copia\ \(15\).png");
+}
+
+h5.card-title {
+  font-family: "Messapia";
 }
