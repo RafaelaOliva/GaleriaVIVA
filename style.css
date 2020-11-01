@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Messapia";
-  src: url("fontes/Messapia-Regular.woff2") format("woff2"),
-       url("fontes/Messapia-Regular.woff") format("woff");
+  src: url("assets/fonts/Messapia-Regular.woff2") format("woff2"),
+       url("assets/fonts/Messapia-Regular.woff") format("woff");
 }
 
 * {
@@ -105,14 +105,11 @@ section.shop .btn-secondary {
 section .header {
   height: 100vh;
 
-   background: url("https://via.placeholder.com/1920x1080") no-repeat center center fixed; 
+   background: url("assets/img/Copy-of-everard-800x1060.png") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-section .header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,6 +120,21 @@ section .header .logo {
   margin: 14px;
   width: 296px;
   height: 88px;
+}
+
+section .header h1 {
+  font-family: "Messapia";
+  color:#ffffff;
+  font-size: 65px;
+  text-align: center;
+}
+
+section .header .btn-secondary {
+ background-color: #D80F21;
+ color: #ffffff;
+ border: none;
+ width: 340px;
+ text-decoration: uppercase;
 }
 
 .gallery {
