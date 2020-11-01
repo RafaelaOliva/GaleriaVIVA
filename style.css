@@ -94,6 +94,7 @@ section.shop .container .btn-secondary,
 section.best-sellers .container .btn-secondary {
   width: 100%;
   border-radius: 0;
+  background-color: red;
 }
 
 section.shop .btn-secondary {
