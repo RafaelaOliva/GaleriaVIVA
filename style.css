@@ -1,23 +1,21 @@
+@font-face {
+  font-family: "Messapia";
+  src: url("fontes/Messapia-Regular.woff2") format("woff2"),
+       url("fontes/Messapia-Regular.woff") format("woff");
+}
+
 * {
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
 }
 
 html, body {
   overflow-x: hidden;
 }
 
-aside.nav {
-    position:fixed;
-    top: 0;
-    left: 0;
-    height:100vh;
-    width: 80px;
-    background-color: #b8b1b1;
-}
-
 section {
-    padding: 70px 0;
-    padding-left: 80px;
+  padding: 70px 0;
 }
 
 section:first-of-type {
@@ -31,6 +29,7 @@ section h2 {
   font-weight: bold;
   font-size: 48px;
   color: #686868;
+  font-family: "Messapia";
 }
 
 section.shop > h2,
@@ -59,13 +58,15 @@ section.best-sellers .container .card > img {
 section.shop .container .card .card-title,
 section.best-sellers .container .card .card-title {
   color: #888888;
-  font: normal normal bold 28px/27px Segoe UI;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 section.shop .container .card .card-subtitle,
 section.best-sellers .container .card .card-subtitle {
   color: #888888;
-  font: italic normal normal 22px/27px Segoe UI;
+  font: italic normal normal 22px/27px;
+
 }
 
 section.shop .container .card .card-text,
@@ -74,7 +75,7 @@ section.best-sellers .container .card .card-text {
 }
 
 section.shop .container .card-text.price-tag{
-  font: normal normal bold 52px/69px Segoe UI;
+  font: normal normal bold 52px/69px;
   color: #1A1A1A;
 }
 
@@ -97,7 +98,7 @@ section.best-sellers .container .btn-secondary {
 }
 
 section.shop .btn-secondary {
-  font: normal normal bold 41px/54px Segoe UI;
+  font: normal normal bold 41px/54px;
   text-transform: Uppercase;
 }
 
