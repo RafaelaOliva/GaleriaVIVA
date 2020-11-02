@@ -1,12 +1,7 @@
-@font-face {
-  font-family: "Messapia";
-  src: url("assets/fonts/Messapia-Regular.woff2") format("woff2"),
-       url("assets/fonts/Messapia-Regular.woff") format("woff");
-}
-
 * {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+
   
 }
 
@@ -28,12 +23,20 @@ section h2 {
   margin-bottom: 46px;
   font-weight: bold;
   font-size: 48px;
-  font-family: "Messapia";
+  font-family: 'DM Serif Text', serif;
 }
 
 section.shop > h2,
 section.best-sellers > h2 {
   margin-bottom: 60px;
+}
+
+section.best-sellers h2 {
+  color: #7BB928;
+}
+
+section.shop > h2 {
+  color: #D80F21;
 }
 
 section.shop .container,
@@ -46,6 +49,7 @@ section.best-sellers .container .card {
   border-radius: 0;
   background: transparent;
   border: 0;
+  
 }
 
 section.shop .container .card > img,
@@ -56,26 +60,34 @@ section.best-sellers .container .card > img {
 
 section.shop .container .card .card-title,
 section.best-sellers .container .card .card-title {
-  color: #888888;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'DM Serif Text', serif !important;
+  font-style: italic;
+  font-size: 28px;
+}
 
+section.shop .container .card .card-title {
+  color:#5BAE13;
+}
+
+section.best-sellers .container .card .card-title {
+  color: #D23232;
 }
 
 section.shop .container .card .card-subtitle,
 section.best-sellers .container .card .card-subtitle {
-  color: #888888;
   font: italic normal normal 22px/27px;
 
 }
 
 section.shop .container .card .card-text,
 section.best-sellers .container .card .card-text {
-  color: #C5C3C3;
+  color: #A89797;
 }
 
 section.shop .container .card-text.price-tag{
-  font: normal normal bold 52px/69px;
-  color: #1A1A1A;
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
 }
 
 
@@ -94,11 +106,21 @@ section.shop .container .btn-secondary,
 section.best-sellers .container .btn-secondary {
   width: 100%;
   border-radius: 0;
+
+}
+
+section.best-sellers .container .btn-secondary { 
+  background-color: #DDC30A;
+  text-transform: Uppercase;
+  border-color: transparent;
+
 }
 
 section.shop .btn-secondary {
   font: normal normal bold 41px/54px;
   text-transform: Uppercase;
+  background-color: #0A57DD;
+  border-color: transparent;
 }
 
 section .header {
@@ -122,7 +144,7 @@ section .header .logo {
 }
 
 section .header h1 {
-  font-family: "Messapia";
+  font-family: 'DM Serif Text', serif;
   color:#ffffff;
   font-size: 65px;
   text-align: center;
@@ -163,6 +185,26 @@ section .header .btn {
   margin: 30px;
 }
 
+footer {
+  background: url('assets/img/fundo-footer.png');
+
+}
+
+footer div.container-fluid {
+  padding: 50px;
+}
+
+div.footer-info p {
+  color: #ffffff;
+  font-weight: bold;
+  text-align:center;
+}
+
+div.footer-social .row .col-md-4 {
+  color: #fff;
+  font-size: 24px;
+}
+
 // Within style tags in your html file
 * { box-sizing: border-box; }
 
@@ -194,6 +236,18 @@ section .header .btn {
   div.card-img {
     width:100% !important;
     margin-top: 20px;
+  }
+
+  div.gallery-cell {
+    width: 100% !important;
+  }
+
+  img.gallery-cell-img {
+    width: 100% !important;
+  }
+
+  section.shop .container .card {
+    margin-bottom: 30px;
   }
 }
 
@@ -264,7 +318,7 @@ section .header .btn {
 span.title {
   background-color:red; 
   padding: 5px 20px 5px 20px; 
-  font-family:Messapia;
+  font-family: 'DM Serif Text', serif;
   color:#DDC30A;
 }
 
@@ -295,8 +349,4 @@ div.card-img {
 
 .card-img#card-3 {
   background:url("assets/img/NoPath\ -\ Copia\ \(15\).png");
-}
-
-h5.card-title {
-  font-family: "Messapia";
 }
