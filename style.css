@@ -23,7 +23,7 @@ section h2 {
   margin-bottom: 46px;
   font-weight: bold;
   font-size: 48px;
-  font-family: 'DM Serif Text', serif;
+  font-family: 'Le Murmure';
 }
 
 section.shop > h2,
@@ -350,3 +350,8 @@ div.card-img {
 .card-img#card-3 {
   background:url("assets/img/NoPath\ -\ Copia\ \(15\).png");
 }
+
+@font-face {
+  font-family: "Le Murmure";
+  src: url("fontes/LeMurmure-Regular.woff2") format("woff2"),
+       url("fontes/LeMurmure-Regular.woff") format("woff");
