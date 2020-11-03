@@ -1,12 +1,7 @@
-@font-face {
-  font-family: "Messapia";
-  src: url("fontes/Messapia-Regular.woff2") format("woff2"),
-       url("fontes/Messapia-Regular.woff") format("woff");
-}
-
 * {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+
   
 }
 
@@ -28,13 +23,20 @@ section h2 {
   margin-bottom: 46px;
   font-weight: bold;
   font-size: 48px;
-  color: #686868;
-  font-family: "Messapia";
+  font-family: 'DM Serif Text', serif;
 }
 
 section.shop > h2,
 section.best-sellers > h2 {
   margin-bottom: 60px;
+}
+
+section.best-sellers h2 {
+  color: #7BB928;
+}
+
+section.shop > h2 {
+  color: #D80F21;
 }
 
 section.shop .container,
@@ -47,6 +49,7 @@ section.best-sellers .container .card {
   border-radius: 0;
   background: transparent;
   border: 0;
+  
 }
 
 section.shop .container .card > img,
@@ -57,26 +60,34 @@ section.best-sellers .container .card > img {
 
 section.shop .container .card .card-title,
 section.best-sellers .container .card .card-title {
-  color: #888888;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'DM Serif Text', serif !important;
+  font-style: italic;
+  font-size: 28px;
+}
 
+section.shop .container .card .card-title {
+  color:#5BAE13;
+}
+
+section.best-sellers .container .card .card-title {
+  color: #D23232;
 }
 
 section.shop .container .card .card-subtitle,
 section.best-sellers .container .card .card-subtitle {
-  color: #888888;
   font: italic normal normal 22px/27px;
 
 }
 
 section.shop .container .card .card-text,
 section.best-sellers .container .card .card-text {
-  color: #C5C3C3;
+  color: #A89797;
 }
 
 section.shop .container .card-text.price-tag{
-  font: normal normal bold 52px/69px;
-  color: #1A1A1A;
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
 }
 
 
@@ -95,24 +106,31 @@ section.shop .container .btn-secondary,
 section.best-sellers .container .btn-secondary {
   width: 100%;
   border-radius: 0;
+
+}
+
+section.best-sellers .container .btn-secondary { 
+  background-color: #DDC30A;
+  text-transform: Uppercase;
+  border-color: transparent;
+
 }
 
 section.shop .btn-secondary {
   font: normal normal bold 41px/54px;
   text-transform: Uppercase;
+  background-color: #0A57DD;
+  border-color: transparent;
 }
 
 section .header {
   height: 100vh;
 
-   background: url("https://via.placeholder.com/1920x1080") no-repeat center center fixed; 
+   background: url("assets/img/Copy-of-everard-800x1060.png") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-section .header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -125,30 +143,35 @@ section .header .logo {
   height: 88px;
 }
 
+section .header h1 {
+  font-family: 'DM Serif Text', serif;
+  color:#ffffff;
+  font-size: 65px;
+  text-align: center;
+}
+
+section .header .btn-secondary {
+ background-color: #D80F21;
+ color: #ffffff;
+ border: none;
+ width: 340px;
+ text-decoration: uppercase;
+}
+
 .gallery {
   background: #EEE;
 }
 
 .gallery-cell {
-  width: 712px;
-  height: 423px;
-  margin-right: 125px;
-  background: url("https://via.placeholder.com/712x423");
+  width: 700px;
   counter-increment: gallery-cell;
+  padding: 10px;
 }
 
-.masonry {
-  margin: -7px;
-  margin: 0 auto;
-}
-
-.masonry .masonry-item {
-  padding: 7px;
-}
-
-.carrossel h1 {
+.carrossel h2 {
   text-align: center;
   margin-bottom:30px;
+  color: #E72480;
 }
 
 
@@ -160,4 +183,170 @@ section .header .logo {
 section .header .btn {
   width: 370px;
   margin: 30px;
+}
+
+footer {
+  background: url('assets/img/fundo-footer.png');
+
+}
+
+footer div.container-fluid {
+  padding: 50px;
+}
+
+div.footer-info p {
+  color: #ffffff;
+  font-weight: bold;
+  text-align:center;
+}
+
+div.footer-social .row .col-md-4 {
+  color: #fff;
+  font-size: 24px;
+}
+
+// Within style tags in your html file
+* { box-sizing: border-box; }
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+@media (max-width: 575px) {
+  .grid-sizer,
+  .grid-item {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .grid-sizer,
+  .grid-item {
+    width: 50%;
+  }
+
+}
+
+@media (min-width: 300px) and (max-width:576px) {
+  div.card-img {
+    width:100% !important;
+    margin-top: 20px;
+  }
+
+  div.gallery-cell {
+    width: 100% !important;
+  }
+
+  img.gallery-cell-img {
+    width: 100% !important;
+  }
+
+  section.shop .container .card {
+    margin-bottom: 30px;
+  }
+}
+
+/* To change the amount of columns on larger devices, uncomment the code below */
+
+/* @media (min-width: 768px) and (max-width: 991px) {
+  .grid-sizer,
+  .grid-item {
+    width: 33.333%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .grid-sizer,
+  .grid-item {
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-sizer,
+  .grid-item {
+    width: 20%;
+  }
+} */
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.destaque h2 {
+  color:#DDC30A;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+
+}
+
+.grid-item:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+span.title {
+  background-color:red; 
+  padding: 5px 20px 5px 20px; 
+  font-family: 'DM Serif Text', serif;
+  color:#DDC30A;
+}
+
+button#vejamais {
+  margin:auto;
+  display:block;
+  font-weight:bold;
+  padding: 5px 30px 5px 30px;
+  background-color:#7BB928;
+  border-radius:0;
+  border-color:#7BB928;
+}
+
+div.card-img {
+  width:340px;
+  height:250px;
+
+  margin-bottom: 20px;
+}
+
+.card-img#card-1 {
+  background:url("assets/img/NoPath\ -\ Copia\ \(13\).png");
+}
+
+.card-img#card-2 {
+  background:url("assets/img/NoPath\ -\ Copia\ \(14\).png");
+}
+
+.card-img#card-3 {
+  background:url("assets/img/NoPath\ -\ Copia\ \(15\).png");
 }
