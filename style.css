@@ -140,6 +140,7 @@ section .header .logo {
 .masonry {
   margin: -7px;
   margin: 0 auto;
+	
 }
 
 .masonry .masonry-item {
