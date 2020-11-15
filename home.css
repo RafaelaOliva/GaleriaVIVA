@@ -200,6 +200,9 @@ div.footer-info p {
   text-align:center;
 }
 
+div.footer-social {
+  text-align:center;
+}
 div.footer-social .row .col-md-4 {
   color: #fff;
   font-size: 24px;
