@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <script src="js/three.min.js"></script>
+        <script src="js/panolens.min.js"></script>
+        <script>
+
+            const panorama = new PANOLENS.ImagePanorama( 'assets/img/panorama/unnamed.png' );
+            const viewer = new PANOLENS.Viewer();
+            viewer.add( panorama );
+
+            viewer.remove( panorama );
+
+            newpanorama = new PANOLENS.ImagePanorama( 'assets/img/panorama/unnamed.png' );
+
+            viewer.add( newpanorama );
+            viewer.setPanorama( newpanorama );
+            
+        </script>
+    </body>
+</html>
