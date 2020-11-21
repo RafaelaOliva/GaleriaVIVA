@@ -15,7 +15,6 @@ aside.nav {
     background-color: #b8b1b1;
 }
 
-
 /*aqui começa o menu, não mexa!*/
 /************************************************/
 /****************** NAVIGATION ******************/
@@ -51,7 +50,7 @@ nav label {
 #menu-icon:after {
     background: #1d1f20;
     border-radius: 0.05em;
-    height: 0.2em;
+    height: 0.1em;
     transition: all 0.2s ease-in-out;
     width: 100%;
 }
@@ -119,13 +118,12 @@ nav ul {
     opacity: 0;
     overflow: hidden;
     padding: 0;
-    text-align: center;
+    text-align: left;
 	font: 65px 'Bely Display', sans-serif;
 }
 
 nav input:checked ~ ul {
-    margin: 1em;
-    max-height: inherit;
+    max-height: initial;
     opacity: 1;
 }
 
