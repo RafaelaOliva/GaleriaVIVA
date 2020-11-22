@@ -82,7 +82,6 @@ nav label {
 
 /* Close Icon */
 nav input[type=checkbox]:checked + label #menu-icon {
-    background: transparent;
 }
 
 nav input[type=checkbox]:checked + label #menu-icon:before {
@@ -120,6 +119,8 @@ nav ul {
     padding: 0;
     text-align: left;
 	font: 65px 'Bely Display', sans-serif;
+	width: 100%;
+
 }
 
 nav input:checked ~ ul {
@@ -128,7 +129,14 @@ nav input:checked ~ ul {
 }
 
 nav ul > li {
-    margin: 0.5em 0;
+    margin: 5px;
+	padding: 10px;
+	border-bottom: 2px solid black;
+	width: 100%;
+}
+
+#sobre {
+	border-top: 2px solid black;
 }
 
 nav ul a {
