@@ -1,12 +1,147 @@
 * {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-
-  
+ 
 }
 
 html, body {
   overflow-x: hidden;
+}
+
+nav {
+  background: white;
+  color: #1A1A1A;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  font-family: bely-display, sans-serif;
+}
+
+/*** INPUT ***/
+nav input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/*** LABEL ***/
+nav label {
+  cursor: pointer;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.5em;
+}
+
+/* Hamburger Icon */
+#menu-icon,
+#menu-icon:before,
+#menu-icon:after {
+  background: #1A1A1A;
+  border-radius: 0.05em;
+  height: 0.1em;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+#menu-icon {
+  display: inline-block;
+  max-width: 1em;
+  position: relative;
+}
+
+
+
+#menu-icon:before,
+#menu-icon:after {
+  content: '';
+  left: 0;
+  position: absolute;
+justify-content: flex-start;
+}
+
+#menu-icon:before {
+  top: -0.4em;
+}
+
+#menu-icon:after {
+  bottom: -0.4em;
+}
+
+/* Close Icon */
+nav input[type=checkbox]:checked + label #menu-icon {
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:before {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:after {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+
+/*** MENU ***/
+/* Overlay */
+nav input:checked ~ #overlay {
+  background: white;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+/* List */
+nav ul {
+  list-style: none;
+  margin: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+
+}
+
+nav input:checked ~ ul {
+  max-height: initial;
+  opacity: 1;
+}
+
+nav ul > li {
+  margin: 5px;
+  padding: 10px;
+  border-bottom: 2px solid black;
+  width: 100%;
+}
+
+#sobre {
+border-top: 2px solid black;
+}
+
+nav ul a {
+  color: #1A1A1A;
+  text-decoration: none;
+  font-family: bely-display, sans-serif!important;
+  font-size: 3em;
+
+}
+
+nav ul a:hover {
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #1A1A1A;
+  text-decoration: none;
 }
 
 section {
@@ -23,7 +158,8 @@ section h2 {
   margin-bottom: 46px;
   font-weight: bold;
   font-size: 48px;
-  font-family: 'Le Murmure';
+  font-family: bely-display, sans-serif;
+
 }
 
 section.shop > h2,
@@ -60,7 +196,7 @@ section.best-sellers .container .card > img {
 
 section.shop .container .card .card-title,
 section.best-sellers .container .card .card-title {
-  font-family: 'DM Serif Text', serif !important;
+  font-family: bely-display, sans-serif !important;
   font-style: italic;
   font-size: 28px;
 }
@@ -124,9 +260,9 @@ section.shop .btn-secondary {
 }
 
 section .header {
-  height: 100vh;
+  height:90vh;
 
-   background: url("assets/img/Copy-of-everard-800x1060.png") no-repeat center center fixed; 
+   background: url('../img/Copy-of-everard-800x1060.png') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -137,17 +273,13 @@ section .header {
   justify-content: space-between;
 }
 
-section .header .logo {
-  margin: 14px;
-  width: 296px;
-  height: 88px;
-}
 
 section .header h1 {
-  font-family: 'DM Serif Text', serif;
+  font-family: bely-display, sans-serif;
   color:#ffffff;
   font-size: 65px;
   text-align: center;
+  margin-top: 10%;
 }
 
 section .header .btn-secondary {
@@ -186,7 +318,7 @@ section .header .btn {
 }
 
 footer {
-  background: url('assets/img/fundo-footer.png');
+  background: url('../img/fundo-footer.png');
 
 }
 
@@ -251,6 +383,13 @@ div.footer-social .row .col-md-4 {
 
   section.shop .container .card {
     margin-bottom: 30px;
+  }
+  nav ul a {
+    font-size: 1.5em;
+  }
+
+  #logo {
+    
   }
 }
 
@@ -343,18 +482,13 @@ div.card-img {
 }
 
 .card-img#card-1 {
-  background:url("assets/img/NoPath\ -\ Copia\ \(13\).png");
+  background:url("../assets/img/NoPath\ -\ Copia\ \(13\).png");
 }
 
 .card-img#card-2 {
-  background:url("assets/img/NoPath\ -\ Copia\ \(14\).png");
+  background:url("../assets/img/NoPath\ -\ Copia\ \(14\).png");
 }
 
 .card-img#card-3 {
-  background:url("assets/img/NoPath\ -\ Copia\ \(15\).png");
+  background:url("../assets/img/NoPath\ -\ Copia\ \(15\).png");
 }
-
-@font-face {
-  font-family: "Le Murmure";
-  src: url("fontes/LeMurmure-Regular.woff2") format("woff2"),
-       url("fontes/LeMurmure-Regular.woff") format("woff");
