@@ -167,8 +167,13 @@ a:hover {
 
     /** inicio do css da pagina **/
 
+    section.container {
+        margin-top: 5%;
+
+    }
 #primeirocard {
-        background-color: #000000;
+    background-color: #000000;
+    padding-top: 20px;
 
 }
 
@@ -176,4 +181,81 @@ a:hover {
     color:#BBBBBA;
     font-family: bely-display, sans-serif;
     font-style: italic;
+    margin-right: 10px;
+    font-size: 50px;
+    
 }
+
+#statusexpos {
+    width:100%;
+    background-color:#BBBBBA;
+    color:black;
+    margin-top: 20%;
+}
+
+#statusexpos p {
+    padding: 10px;
+}
+
+#embreve {
+    padding: 0 10px 10px 10px;
+}
+
+.virtualexp {
+    background-color: red;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    margin-top: -35px;
+}
+.card {
+    margin-bottom: 25px;
+    border: none;
+
+}
+
+.card-title {
+    font-size:24px;
+    font-style: italic;
+    margin-bottom: -2px;
+    margin-top: 20px;
+    
+}
+
+.card-text, .card-info {
+  color: #8A8A8A;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.card-img-top {
+    height: 219px;
+}
+
+footer {
+  background: url('../img/fundo-footer.png');
+
+}
+
+footer div.container-fluid {
+  padding: 50px;
+}
+
+div.footer-info p {
+  color: #ffffff;
+  font-weight: bold;
+  text-align:center;
+}
+
+div.footer-social {
+  text-align:center;
+}
+div.footer-social .row .col-md-4 {
+  color: #fff;
+  font-size: 24px;
