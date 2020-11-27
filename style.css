@@ -6,149 +6,67 @@ html, body {
   overflow-x: hidden;
 }
 
-aside.nav {
-    position:fixed;
-    top: 0;
-    left: 0;
-    height:100vh;
-    width: 80px;
-    background-color: #b8b1b1;
+/*barra de pesquisa vai essa porra*/
+#wrap {
+  margin: 50px 100px;
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  float: right;
+  padding: 0;
+  position: relative;
 }
 
-/*aqui começa o menu, não mexa!*/
-/************************************************/
-/****************** NAVIGATION ******************/
-/************************************************/
-nav {
-    background: #white;
-    color: #1A1A1A;
-    left: 0;
-    position: relative;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
+input[type="text"] {
+  height: 60px;
+  font-size: 25px;
+  display: inline-block;
+  font-family: "Poppins";
+  font-weight: 100;
+  border: none;
+  outline: none;
+  color: #555;
+  padding: 0px;  
+  padding-right: 50px;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  z-index: 3;
+  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  cursor: pointer;
 }
 
-/*** INPUT ***/
-nav input {
-    opacity: 0;
-    position: absolute;
-    z-index: -1;
+input[type="text"]:focus:hover {
+  border-bottom: 1px solid #BBB;
 }
 
-/*** LABEL ***/
-nav label {
-    cursor: pointer;
-    display: block;
-    font: 2em/1 'Oswald', sans-serif;
-    padding: 0.5em;
+input[type="text"]:focus {
+  width: 700px;
+  z-index: 0;
+  border-bottom: 1px solid #BBB;
+  cursor: text;
+}
+input[type="submit"] {
+  height: 37px;
+  width: 33px;
+  display: inline-block;
+  color:red;
+  float: right;
+  background: url("search-solid.svg") center center no-repeat;
+  text-indent: -10000px;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity .4s ease;
 }
 
-/* Hamburger Icon */
-#menu-icon,
-#menu-icon:before,
-#menu-icon:after {
-    background: #1A1A1A;
-    border-radius: 0.05em;
-    height: 0.1em;
-    transition: all 0.2s ease-in-out;
-    width: 100%;
-}
-
-#menu-icon {
-    display: inline-block;
-    margin: 0.4em 0;
-    max-width: 1em;
-    position: relative;
-}
-
-
-
-#menu-icon:before,
-#menu-icon:after {
-    content: '';
-    left: 0;
-    position: absolute;
-	justify-content: flex-start;
-}
-
-#menu-icon:before {
-    top: -0.4em;
-}
-
-#menu-icon:after {
-    bottom: -0.4em;
-}
-
-/* Close Icon */
-nav input[type=checkbox]:checked + label #menu-icon {
-}
-
-nav input[type=checkbox]:checked + label #menu-icon:before {
-    top: 0;
-    transform: rotate(-45deg);
-}
-
-nav input[type=checkbox]:checked + label #menu-icon:after {
-    bottom: 0;
-    transform: rotate(45deg);
-}
-
-
-/*** MENU ***/
-/* Overlay */
-nav input:checked ~ #overlay {
-    background: #white;
-    bottom: 0;
-    left: 0;
-    height: 100vh;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100vw;
-    z-index: -1;
-}
-
-/* List */
-nav ul {
-    list-style: none;
-    margin: 0;
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    padding: 0;
-    text-align: left;
-	font: 65px 'Bely Display', sans-serif;
-	width: 100%;
-
-}
-
-nav input:checked ~ ul {
-    max-height: initial;
-    opacity: 1;
-}
-
-nav ul > li {
-    margin: 5px;
-	padding: 10px;
-	border-bottom: 2px solid black;
-	width: 100%;
-}
-
-#sobre {
-	border-top: 2px solid black;
-}
-
-nav ul a {
-    color: #1A1A1A;
-    text-decoration: none;
-}
-
-nav ul a:hover {
-    text-decoration: underline;
-}
-
-a:hover {
-    color: #1A1A1A;
-    text-decoration: none;
+input[type="submit"]:hover {
+  opacity: 0.8;
 }
