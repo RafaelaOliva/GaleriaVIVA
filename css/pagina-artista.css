@@ -157,6 +157,12 @@
     font-weight: bold;
     text-align:center;
   }
+
+  div.footer-info img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
   
   div.footer-social {
     text-align:center;
@@ -190,8 +196,7 @@ div.colagem {
 }
 
 button.btn-success {
-    padding: 15px 30px 15px 30px;
-    font-family: bely-display, sans-serif;
+    padding: 15px 20px 15px 20px;
     color: #000000;
     background-color:#FFD500;
     border: none;
@@ -208,4 +213,28 @@ section.obras {
 
 section.obras p {
     font-size: 15px;
+}
+
+img.img-obras {
+  height: 200px;
+
+}
+
+.card-obras {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-bottom: 15%;
+
+}
+
+img.img-artistas {
+  margin-bottom: 10%;
+  border-radius: 100%;
+}
+
+.col-12 h1 {
+  padding-top: 20%;
+  font-family: bely-display, sans-serif;
+  font-size: 48px;
 }

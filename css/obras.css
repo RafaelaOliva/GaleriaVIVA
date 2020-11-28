@@ -144,16 +144,19 @@
   }
 
   section.header {
-      background-image:url('../img/MickaleneThomas.png');
+      background-image:url('../img/bgobras.png');
       height:70vh;
       width:100%;
       background-size:cover;
+      position:relative;
   }
 
   section.header h1 {
     font-family: bely-display, sans-serif;
     color: #ffffff;
     font-size: 8em;
+    bottom: 0;
+    position:absolute;
   }
 
   #filtros {
@@ -214,3 +217,10 @@
   div.footer-social .row .col-md-4 {
     color: #fff;
     font-size: 24px;
+  }
+  
+    div.footer-info img {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }

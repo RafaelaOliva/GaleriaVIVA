@@ -340,6 +340,12 @@ div.footer-social .row .col-md-4 {
   font-size: 24px;
 }
 
+div.footer-info img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 // Within style tags in your html file
 * { box-sizing: border-box; }
 
