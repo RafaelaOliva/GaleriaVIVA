@@ -16,6 +16,7 @@
     width: 100%;
     z-index: 9999;
     font-family: bely-display, sans-serif;
+
   }
   
   /*** INPUT ***/
@@ -148,6 +149,14 @@
 	width: 100%;
 }
 
+.obras {
+  margin-top: 10%;
+}
+
+.mais-obras {
+  margin-top: 5%;
+}
+
 h1 {
 	font-family: 'Bely Display';
 	font-size: 35px;
@@ -203,7 +212,6 @@ h6 {
 }
 
 .btn {
-	  width: 45%;
       background-color: #14B09A;
       border-radius: 0;
       font-weight: bold;
@@ -211,14 +219,12 @@ h6 {
 }
 
 .form-control {
-	width: 45%;
 	font-style: italic;
 	color: #919191
 }
 
 
 div.gallery {
-  margin-right: 1%;
   
 }
 
