@@ -16,6 +16,7 @@
     width: 100%;
     z-index: 9999;
     font-family: bely-display, sans-serif;
+
   }
   
   /*** INPUT ***/
@@ -143,33 +144,29 @@
     text-decoration: none;
   }
 
-.obras{
-	display: flex;
-	position: center;
-	margin-top: 6%;
-}
 
 #obra {
 	width: 100%;
-	margin-left: 50%;
- 	margin-right: auto;
-  	display: block;
+}
+
+.obras {
+  margin-top: 10%;
+}
+
+.mais-obras {
+  margin-top: 5%;
 }
 
 h1 {
 	font-family: 'Bely Display';
 	font-size: 35px;
 	font-weight: bold;
-	position: center;
-	margin-left: 30%;
-	margin-top: 6%;
 }
 
 h2 {
 	font-family: 'Poppins', sans-serif;
 	font-size: 35px;
 	font-weight: bold;
-	margin-left: 23%;
 }
 
 h3 {
@@ -177,22 +174,19 @@ h3 {
 	font-size: 20px;
 	font-style: italic;
 	color: #888888;
-	margin-left: 23%;
 }
 
 h4 {
 	font-family: 'Poppins', sans-serif;
 	font-size: 15px;
 	color: #C5C3C3;
-	margin-left: 23%;
 }
 
 h5 {
 	font-family: 'Poppins', sans-serif;
 	font-size: 32px;
 	color: black;
-	margin-top: 3%;
-	margin-left: 23%;
+
 }
 
 h6 {
@@ -200,7 +194,6 @@ h6 {
 	font-size: 12px;
 	font-style: italic;
 	color: #14B09A;
-	margin-left: 23%;
 }
 
 #estilonovo {
@@ -208,8 +201,6 @@ h6 {
 	font-size: 14px;
 	font-weight: bold;
 	color: #1a1a1a;
-	margin-top: 10%;
-	margin-left: 23%;
 }
 
 #estilonovo1 {
@@ -217,37 +208,23 @@ h6 {
 	font-size: 14px;
 	font-weight: bold;
 	color: #1a1a1a;
-	margin-top: 1%;
-	margin-left: 23%;
 	
 }
 
 .btn {
-	  width: 45%;
       background-color: #14B09A;
       border-radius: 0;
       font-weight: bold;
       color: white;
-	  margin-left: 23%;
-	  margin-top: 4%;
 }
 
 .form-control {
-	width: 45%;
-	margin-left: 23%;
 	font-style: italic;
 	color: #919191
 }
 
-.outras-obras {
-	display: flex;
-	position: center;	
-	justify-content: center;
-	margin-top: 1%;
-}
 
 div.gallery {
-  margin-right: 1%;
   
 }
 
@@ -258,7 +235,6 @@ div.gallery img {
 }
 
 div.desc {
-  padding-top: 5px;
   text-align: left;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
@@ -274,46 +250,32 @@ div.ano{
 }
 
 .por-tras-das-tintas {
-	display: flex;	
-	justify-content: center;
 	margin-top: 1%;
 	margin-bottom: 3%;
 }
 
-#tinta {
-	margin-left: 40%;
-}
+
 
 #artista {
-	display: flex;
 	position: center;
-	margin-left: 40%;
 	border-radius: 100%;
 
 }
 
 #nome-do-artista {
-	display: flex;
-	align-content: center;
 	font-family: 'Poppins', sans-serif;
 	font-size: 35px;
 	font-weight: bold;
-	margin-left: 50%;
 }
 
 #descricao-do-artista {
-	display: flex;
-	align-content: center;
+
 	font-family: 'Poppins', sans-serif;
 	font-style: normal;
 	font-size: 14px;
-	margin-left: 50%;
 	color: #1a1a1a;
 }
 
-option {
-	font-style: normal;
-}
   footer {
     background: url('fundo-footer.png');
   
