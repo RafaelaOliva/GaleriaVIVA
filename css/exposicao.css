@@ -3,6 +3,7 @@
     font-family: 'Poppins', sans-serif;
    
   }
+  
   html, body {
     overflow-x: hidden;
   }
@@ -11,7 +12,7 @@
     background: white;
     color: #1A1A1A;
     left: 0;
-    position: relative;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 9999;
@@ -69,7 +70,8 @@
   }
   
   /* Close Icon */
-
+  
+  
   nav input[type=checkbox]:checked + label #menu-icon:before {
     top: 0;
     transform: rotate(-45deg);
@@ -141,7 +143,7 @@
     text-decoration: none;
   }
 
-  footer {
+footer {
     background: url('../img/fundo-footer.png');
     padding: 25px;
   
@@ -209,92 +211,17 @@
       max-height: 500px; 
       transition: max-height 1s ease-in !important; }
     }
-  section.header {
-      background-image: url("../img/bg\ sobre.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      padding: 5%;
-  }
 
-  section.header h1, section.galeria-virtual h1 {
-      color: white;
-      font-family: bely-display, sans-serif;
-      font-size: 5rem;
-  }
-
-  section.texto-header {
-      text-align: center;
-      padding: 5%;
-      color: #8a8a8a;
-      font-size:22px;
-  }
-
-  section.galeria-virtual {
-      background-image:url("../img/bgsobre2.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      padding: 5%;
-  }
-
-  div.texto-galeria-virtual p {
-      color: white;
-      text-align: center;
-      font-size: 21px;
-      padding: 20px;
-  }
-
-  section.equipe {
-      padding: 5%;
-  }
-
-  div.profile {
-      width: 170px;
-      height: 170px;
-      border-radius: 50%;
-      background-color: #E72480;
-      display: block;
-      margin: auto;
-
-  }
-
-  section.equipe h1 {
-      text-align: center;
-      font-family: bely-display, sans-serif;
-      color: #E72480;
-      margin-bottom: 5%;
-  }
-
-section.equipe p {
-    text-align: center;
-    color: #E72480;
-    margin-top: 5%;
-}
-
-section.cta {
-    background-color:#6D0FD8;
-    padding: 5%;
-    text-align: center;
-    color: white;
-}
-
-section.cta h1 {
+h1 {
     font-family: bely-display, sans-serif;
-    font-size: 3rem;
-}
-
-section.cta p {
-    padding: 5%;
-    font-size: 21px;
-}
-
-section.cta button {
-    background-color:#00B9FF;
-    padding: 15px 30px 15px 30px;
-    border: none;
-    font-weight: bold;
-}
-
-section.cta button:hover {
-    background-color: white;
     color: #00B9FF;
+}
+
+.fa-arrow-down {
+    color: #00B9FF;
+    font-size: 36px;
+}
+
+.expoview {
+    margin-top: 10%;
 }

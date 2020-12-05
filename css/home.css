@@ -70,8 +70,7 @@ justify-content: flex-start;
 }
 
 /* Close Icon */
-nav input[type=checkbox]:checked + label #menu-icon {
-}
+
 
 nav input[type=checkbox]:checked + label #menu-icon:before {
   top: 0;
@@ -485,9 +484,7 @@ div.footer-info img {
     font-size: 1.5em;
   }
 
-  #logo {
-    
-  }
+
 }
 
 /* To change the amount of columns on larger devices, uncomment the code below */
