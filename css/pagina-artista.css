@@ -144,9 +144,44 @@
 
   footer {
     background: url('../img/fundo-footer.png');
+    padding: 25px;
   
   }
   
+  .fa-facebook-f, .fa-twitter, .fa-instagram {
+    color: white;
+    font-size: 24px;
+    margin-right: 5%;
+  }
+  
+  .logo-footer {
+    margin-top: 5%;
+  }
+  
+  /*footer div.container-fluid {
+    padding: 50px;
+  }
+  
+  div.footer-info p {
+    color: #ffffff;
+    font-weight: bold;
+    text-align:center;
+  }
+  
+  div.footer-social {
+    text-align:center;
+  }
+  div.footer-social .row .col-md-4 {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  div.footer-info img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  */
   .btn-form {
     width: 100%;
     border: none;
@@ -200,7 +235,6 @@
       transition: max-height 1s ease-in !important; }
     }
 
-
   div.foto-artista {
       background-image: url("../img/Retângulo\ 104.png");
       background-size: cover;
@@ -243,8 +277,10 @@ section.obras p {
     font-size: 15px;
 }
 
-img.img-obras {
+div.img-obras {
   height: 200px;
+  background-image: url('../img/9616b34f8353e4e19888bfa1fe789d13.jpg');
+  background-position: center;
 
 }
 
@@ -253,12 +289,26 @@ img.img-obras {
   margin-right: auto;
   display: block;
   padding-bottom: 15%;
+  transition-duration: 0.5s;
 
+}
+
+.card-obras:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+  cursor: pointer;
 }
 
 img.img-artistas {
   margin-bottom: 10%;
   border-radius: 100%;
+  filter: url(filters.svg#grayscale);
+  /* Firefox 3.5+ */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Google Chrome & Safari 6+ */
+  transition-duration: 0.5s;
 }
 
 .col-12 h1 {
@@ -266,3 +316,11 @@ img.img-artistas {
   font-family: bely-display, sans-serif;
   font-size: 48px;
 }
+
+img.img-artistas:hover {
+  filter: none;
+  -webkit-filter: none;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
