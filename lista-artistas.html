@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/lista-artistas.css">
+            
+        <!--Bely-->
+        <link rel="stylesheet" href="https://use.typekit.net/cvy7noe.css">
+            
+        <!--Poppins-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        <title>Artistas da VIVA</title>
+    </head>
+    <body>
+        <nav>
+			<div class="container-fluid" style="padding:5px;">
+				<div align="center" style="margin-bottom: -60px;" id="logo">
+					<a class="navbar-brand" href="/index.html">
+						<img src="https://cdn.glitch.com/5c7e9568-df9a-45d4-befe-f83764ac7e02%2Fvivalogo.svg?v=1603578462042" width="120" alt="">
+					</a>
+				</div>
+				<input id="responsive-menu" type="checkbox">
+				<label for="responsive-menu"><span id="menu-icon"></span></label>
+	
+				<div id="overlay"></div>
+				<ul>
+					<li id="sobre"><a href="/sobre.html">sobre</a></li>
+					<li><a href="/expos.html">exposições</a></li>
+					<li><a href="/lista-artistas.html">artistas</a></li>
+					<li><a href="/obras.html">obras</a></li>
+					<li><a href="blog.html">blog</a></li>
+					<li><a href="/contato.html">entre em contato</a></li>
+				</ul>
+			</div>
+        </nav>
+        
+		<div class="container" style="margin-top:5%;">
+			<div class="row justify-content-start">
+				<h1>conheça nossos </br>ARTISTAS</h1>
+			</div>
+		</div>
+			
+		<section class="container-fluid">
+			<div class="container" id="filtros">
+				<div class="row">
+					<div class="col-md-2">
+						<select>
+							<option value="" disabled selected>Letra</option>
+							<option value="">A</option>
+							<option value="">B</option>
+							<option value="">C</option>
+							<option value="">D</option>
+						</select>
+					</div>
+					<div class="col-md-2">
+						<select>
+							<option value="" disabled selected>País</option>
+							<option value="">Brasil</option>
+							<option value="">EUA</option>
+							<option value="">Colombia</option>
+							<option value="">Japão</option>
+						</select>
+					</div>
+					<div class="col-md-2">
+						<select>
+							<option value="" disabled selected>Ordernar por</option>
+							<option value="">Mais recentes</option>
+							<option value="">Mais vistos</option>
+							<option value="">Mais comentados</option>
+							<option value="">Em destaque</option>
+						</select>
+					</div>
+					<div class="col-md-2">
+						<button type="button" class="btn">FILTRAR</button>
+					</div>
+				</div>
+			</div>
+		</section>
+			
+		<section class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-8 card-artista">
+						<img id="artistas" src="img/marcus.png" alt="error"/>
+						<h2>Marcus Montenegro</h2>
+						<h3>Colômbia</h3>
+						<button type="button" class="btn">Mais informações >></button>
+					</div>
+						
+					<div class="col-md-3 col-sm-8 card-artista">
+						<img id="artistas" src="img/paul.png" alt="error"/>
+						<h2>Paul Barbour</h2>
+						<h3>França</h3>
+						<button type="button" class="btn">
+							<a href="pagina-artista.html" >Mais informações >></a>
+						</button>
+					</div>
+					<div class="col-md-3 col-sm-8 card-artista">
+						<img id="artistas" src="img/caroline.png" alt="error"/>
+						<h2>Caroline Salles</h2>
+						<h3>Brasil</h3>
+						<button type="button" class="btn">Mais informações >></button>
+					</div>
+					<div class="col-md-3 col-sm-8 card-artista">
+						<img id="artistas" src="img/elisa.png" alt="error"/>
+						<h2>Elisa Soares</h2>
+						<h3>Brasil</h3>
+						<button type="button" class="btn">Mais informações >></button>
+					</div>
+					<div class="col-md-3 col-sm-8 card-artista">
+						<img id="artistas" src="img/joana.png" alt="error"/>
+						<h2>Joana Collins</h2>
+						<h3>EUA</h3>
+						<button type="button" class="btn">Mais informações >></button>
+					</div>
+					<div class="col-md-3 col-sm-8 card-artista">
+						<img id="artistas" src="img/margot.png" alt="error"/>
+						<h2>Margot Serris</h2>
+						<h3>França</h3>
+						<button type="button" class="btn">Mais informações >></button>
+					</div>
+					<div class="col-md-3 col-sm-8 card-artista">
+						<img id="artistas" src="img/carlos.png" alt="error"/>
+						<h2>Carlos Berdion</h2>
+						<h3>Argentina</h3>
+						<button type="button" class="btn">Mais informações >></button>
+					</div>
+					<div class="col-md-3 col-sm-8 card-artista">
+						<img id="artistas" src="img/joanna.png" alt="error"/>
+						<h2>Joanna Paige</h2>
+						<h3>EUA</h3>
+						<button type="button" class="btn">Mais informações >></button>
+					</div>
+				</div>
+			</div>
+			<br>
+		</section>
+	
+		
+		<footer class="footer">
+			<div class="row justify-content-center">
+				<div class="col-12 col-lg-3 logo-footer" align="center">
+					<img src="img/vivalogobranco.svg" width="120px"><br><br>
+					<i class="fab fa-facebook-f"></i>
+					<i class="fab fa-pinterest"></i>
+					<i class="fab fa-instagram"></i>
+				</div>
+				<div class="footer-item col-12 col-lg-3">
+					<h4>Mapa do site</h4>
+					<ul>
+						<li><a href="/index.html">home</a></li>
+					  	<li><a href="/sobre.html">sobre</a></li>
+					  	<li><a href="/expos.html">exposições</a></li>
+					  	<li><a href="/lista-artistas.html">artistas</a></li>
+					  	<li><a href="/obras.html">obras</a></li>
+					  	<li><a href="blog.html">blog</a></li>
+					 	<li><a href="/contato.html">entre em contato</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-lg-3">
+					<h4>Assine nossa Newsletter</h4>
+					<p style="font-size:14px;color:white;">Fique por dentro das novidades da Viva</p>
+					<div class="form-group">
+						<input type="e-mail" class="form-control" id="inputEmail" placeholder="E-mail">
+					</div>
+					<button type="submit" class="btn-form">ENVIAR</button>
+		  
+				</div>
+			</div>
+		</footer>
+		<script defer src="fontawesome-free-5.15.1-web/js/all.js"></script>
+    </body>
+</html>

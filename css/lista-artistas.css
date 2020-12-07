@@ -70,7 +70,8 @@
   }
   
   /* Close Icon */
-
+  nav input[type=checkbox]:checked + label #menu-icon {
+  }
   
   nav input[type=checkbox]:checked + label #menu-icon:before {
     top: 0;
@@ -143,56 +144,72 @@
     text-decoration: none;
   }
 
-  section.header {
-      background-image:url('../img/bgobras.png');
-      height:70vh;
-      width:100%;
-      background-size:cover;
-      position:relative;
-  }
+h1 {
+	font-family: 'Bely Display', sans-serif;
+	font-size: 45px;
+	font-weight: bold;
+}
 
-  section.header h1 {
-    font-family: bely-display, sans-serif;
-    color: #ffffff;
-    font-size: 8em;
-    bottom: 0;
-    position:absolute;
-  }
 
-  #filtros {
-      padding: 10px;
+#letra {
+	color: #1A1A1A;
+	text-decoration: none;
+}
+
+#artistas {
+	border-radius: 100%;
+  margin-top: 10%;
+  width: 100%;
+}
+
+.card-artista {
+  text-align: center;
+}
+
+h2 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 21px;
+	font-weight: bold;
+	margin-top: 2%;
+}
+
+h3 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	color: #888888;
+
+}
+
+.btn {
+      background-color: #CE3A65;
+      border-radius: 0;
+      font-weight: bold;
+      color: white;
+}
+
+.btn:hover{
+  color: #CE3A65;
+  background-color: white;
+  border: 1px solid #ce3a65;
+}
+
+.btn a {
+  color: white;
+}
+
+.btn a:hover {
+  color: #ce3a65;
+}
+
+#filtros {
+      padding: 0px;
       margin-top: 15px;
       margin-bottom: 15px;
   }
   select {
     border-color:#8A8A8A;
-    padding:5px 10px 5px 10px;
-    width:90%;
-    color: #8A8A8A;
-  }
-
-  button.btn {
-      width: 100%;
-      background-color: #7BB928;
-      border-radius: 0;
-      font-weight: bold;
-      color: white;
-  }
-
-  .card {
-      margin-bottom: 25px;
-      border: none;
-
-  }
-
-  .card-title {
-      font-family: bely-display, sans-serif;
-      font-size:25px;
-      font-style: italic;
-      
-  }
-
-  .card-text {
+    padding:5%;
+    width:100%;
     color: #8A8A8A;
   }
 
@@ -228,10 +245,6 @@
     
     .footer-item ul li a:hover {
       color:#00B9FF;
-    }
-  
-    .open h4 {
-      opacity: 0.3;
     }
     
     .footer-item, .footer h4 {

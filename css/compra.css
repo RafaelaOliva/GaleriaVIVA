@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+   
+  }
+  html, body {
+    overflow-x: hidden;
+  } 
+
+  nav {
+    background: white;
+    color: #1A1A1A;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    font-family: bely-display, sans-serif;
+
+  }
+  
+  /*** INPUT ***/
+  nav input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  /*** LABEL ***/
+  nav label {
+    cursor: pointer;
+    display: block;
+    padding: 0.5em;
+    font-size: 1.5em;
+  }
+  
+  /* Hamburger Icon */
+  #menu-icon,
+  #menu-icon:before,
+  #menu-icon:after {
+    background: #1A1A1A;
+    border-radius: 0.05em;
+    height: 0.1em;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+  }
+  
+  #menu-icon {
+    display: inline-block;
+    max-width: 1em;
+    position: relative;
+  }
+  
+  
+  
+  #menu-icon:before,
+  #menu-icon:after {
+    content: '';
+    left: 0;
+    position: absolute;
+  justify-content: flex-start;
+  }
+  
+  #menu-icon:before {
+    top: -0.4em;
+  }
+  
+  #menu-icon:after {
+    bottom: -0.4em;
+  }
+  
+  /* Close Icon */
+  nav input[type=checkbox]:checked + label #menu-icon {
+  }
+  
+  nav input[type=checkbox]:checked + label #menu-icon:before {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  
+  nav input[type=checkbox]:checked + label #menu-icon:after {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+  
+  
+  /*** MENU ***/
+  /* Overlay */
+  nav input:checked ~ #overlay {
+    background: white;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+  }
+  
+  /* List */
+  nav ul {
+    list-style: none;
+    margin: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+  
+  }
+  
+  nav input:checked ~ ul {
+    max-height: initial;
+    opacity: 1;
+  }
+  
+  nav ul > li {
+    margin: 5px;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    width: 100%;
+  }
+  
+  #sobre {
+  border-top: 2px solid black;
+  }
+  
+  nav ul a {
+    color: #1A1A1A;
+    text-decoration: none;
+    font-family: bely-display, sans-serif!important;
+    font-size: 3em;
+  
+  }
+  
+  nav ul a:hover {
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    color: #1A1A1A;
+    text-decoration: none;
+  }
+
+
+#obra {
+	width: 100%;
+}
+
+.obras {
+  margin-top: 7%;
+}
+
+.mais-obras {
+  margin-top: 5%;
+}
+
+h1 {
+	font-family: 'Bely Display';
+	font-size: 35px;
+	font-weight: bold;
+}
+
+h2 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+h3 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-style: italic;
+	color: #888888;
+}
+
+h4 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	color: #C5C3C3;
+}
+
+h5 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 32px;
+	color: black;
+
+}
+
+h6 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	color: #14B09A;
+}
+
+#estilonovo {
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #1a1a1a;
+}
+
+#estilonovo1 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #1a1a1a;
+	
+}
+
+#botao {
+      background-color: #14B09A;
+      border-radius: 0;
+      font-weight: bold;
+      color: white;
+	  margin-top: 3%;
+}
+
+.form-control {
+	font-style: italic;
+	color: #919191
+}
+
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1a1a1a;
+  
+}
+
+.ano{
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  color: #A5A5A5;
+  margin-top: -15px;
+}
+
+.por-tras-das-tintas {
+	margin-top: 1%;
+	margin-bottom: 5%;
+}
+
+
+
+#artista {
+	position: center;
+	border-radius: 100%;
+
+}
+
+#nome-do-artista {
+	font-family: 'Poppins', sans-serif;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+#descricao-do-artista {
+
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-size: 14px;
+	color: #1a1a1a;
+}
+
+footer {
+  background: url('../img/fundo-footer.png');
+  padding: 25px;
+
+}
+
+.fa-facebook-f, .fa-pinterest, .fa-instagram {
+  color: white;
+  font-size: 24px;
+  margin-right: 5%;
+}
+
+.logo-footer {
+  margin-top: 5%;
+}
+
+.btn-form {
+  width: 100%;
+  border: none;
+  padding: 2%;
+}
+.footer-item ul {
+  list-style: none;
+    padding-left: 3px;
+  }
+
+  .footer-item ul li a {
+    color: white;
+  }
+  
+  .footer-item ul li a:hover {
+    color:#00B9FF;
+  }
+  
+  .footer-item, .footer h4 {
+    color: white;
+  }
+
+
+  #botaocompra {
+    background-color:#14B09A;
+    color: white;
+    border:none ;
+    margin-bottom: 5%;
+  }
+
+  #botaocompra:hover {
+    color: #14B09A ;
+    border: 1px solid #14B09A;
+    background-color:white;
+  }
+
+  #botaocancelar{
+    background-color: white;
+    color: #14B09A;
+    border: 1px solid #14B09A;
+  }
+
+  .modal-body {
+    padding: 8% 5% 8% 5% !important;
+    
+  }
+  
