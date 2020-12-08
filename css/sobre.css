@@ -273,3 +273,9 @@ section.cta button:hover {
     background-color: white;
     color: #00B9FF;
 }
+
+@media screen and (min-width: 300px) and (max-width:500px) {
+  nav ul a {
+    font-size: 1.5em;
+  }
+}

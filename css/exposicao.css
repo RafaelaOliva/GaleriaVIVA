@@ -197,3 +197,16 @@ h1 {
 .expoview {
     margin-top: 10%;
 }
+
+@media screen and (min-width:300px) and (max-width:500px) {
+
+
+  div.header {
+      padding-top: 50px;
+  }
+
+
+  nav ul a {
+    font-size: 24px;
+  }
+}

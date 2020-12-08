@@ -257,7 +257,7 @@ section.shop .btn-secondary {
 }
 
 section .header {
-  height:90vh;
+  height:100vh;
 
    background: url('../img/Copy-of-everard-800x1060.png') no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -406,37 +406,14 @@ div.footer-info img {
 }
 */
 
-/* Within style tags in your html file*/
-* { box-sizing: border-box; }
-
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.grid-sizer,
-.grid-item {
-  width: 33.333%;
-}
-@media (max-width: 575px) {
-  .grid-sizer,
-  .grid-item {
-    width: 100%;
-  }
-}
-@media (min-width: 576px) and (max-width: 767px) {
-  .grid-sizer,
-  .grid-item {
-    width: 50%;
-  }
-
-}
-
-@media (min-width: 300px) and (max-width:576px) {
+@media screen and (min-width: 300px) and (max-width: 500px) {
   div.card-img {
     width:100% !important;
     margin-top: 20px;
+  }
+
+  div.header {
+    padding-top: 50px !important;
   }
 
   div.gallery-cell {

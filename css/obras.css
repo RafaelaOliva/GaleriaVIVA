@@ -147,14 +147,13 @@
       background-image:url('../img/bgobras.png');
       height:70vh;
       width:100%;
-      background-size:cover;
       position:relative;
   }
 
   section.header h1 {
     font-family: bely-display, sans-serif;
     color: #ffffff;
-    font-size: 8em;
+    font-size: 6em;
     bottom: 0;
     position:absolute;
   }
@@ -167,7 +166,7 @@
   select {
     border-color:#8A8A8A;
     padding:5px 10px 5px 10px;
-    width:90%;
+    width:100%;
     color: #8A8A8A;
   }
 
@@ -238,3 +237,8 @@
       color: white;
     }
     
+  @media screen and (min-width: 300px) and (max-width:500px) {
+    nav ul a {
+      font-size: 1.5em;
+    }
+  }
