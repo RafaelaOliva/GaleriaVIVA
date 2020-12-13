@@ -234,13 +234,13 @@ div.colagem {
 button.btn-success {
     padding: 15px 20px 15px 20px;
     color: #000000;
-    background-color:#FFD500;
+    background-color:#DDC30A;
     border: none;
     
 }
 
 button.btn-success:hover {
-    background-color: #bead56;
+    background-color: #FFD500;
 }
 
 section.obras {

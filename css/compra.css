@@ -219,6 +219,10 @@ h6 {
 	  margin-top: 3%;
 }
 
+#botao:hover {
+	background-color: #2ACEB7;
+}
+
 .form-control {
 	font-style: italic;
 	color: #919191

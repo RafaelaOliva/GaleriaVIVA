@@ -249,11 +249,19 @@ section.best-sellers .container .btn-secondary {
 
 }
 
+section.best-sellers .container .btn-secondary:hover {
+	background-color: #92D657;
+}
+
 section.shop .btn-secondary {
   font: normal normal bold 41px/54px;
   text-transform: Uppercase;
   background-color: #D80F21;
   border-color: transparent;
+}
+
+section.shop .btn-secondary:hover {
+	background-color: #EE5C69;
 }
 
 section .header {
@@ -285,6 +293,10 @@ section .header .btn-secondary {
  border: none;
  width: 340px;
  text-decoration: uppercase;
+}
+
+section .header .btn-secondary:hover {
+	background-color: #EE5C69;
 }
 
 .gallery {

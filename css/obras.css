@@ -178,6 +178,10 @@
       color: white;
   }
 
+button.btn:hover {
+	background-color: #92D657;
+}
+
   .card {
       margin-bottom: 25px;
       border: none;
