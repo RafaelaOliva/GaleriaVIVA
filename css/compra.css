@@ -325,9 +325,7 @@ footer {
   }
 
   #botaocompra:hover {
-    color: #14B09A ;
-    border: 1px solid #14B09A;
-    background-color:white;
+    background-color: #2ACEB7;
   }
 
   #botaocancelar{
